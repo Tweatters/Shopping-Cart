@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Taylor's Shopping Cart</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/shopping-cart.css">
+	<link href='https://fonts.googleapis.com/css?family=Fanwood+Text' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="panel cart-header">
+		<div class="cart-header-title">
+			<div class="column cart-symbol">.</div>
+			<h1>Shopping Cart</h1>
+		</div>
+		<div class="row">
+			<div class="column pad">
+				<div class="label">aciton</div>
+			</div>
+			<div class="column" id="item">
+				<div class="label">Item</div>
+			</div>
+			<div class="column">
+				<div class="label">Price</div>
+			</div>
+			<div class="column">
+				<div class="label">Quantity</div>
+			</div>
+			<div class="column">
+				<div class="label">Total</div>
+			</div>
+		</div>
+	</div>
+	<div class="panel cart-seperate">
+		<div class="row">
+			<div class="column">
+				<a href="#" class="button">Add</a>
+				<a href="#" class="button">Cancel</a>
+			</div>
+			<div class="column" id="item">
+				<input class="enter-item" size="55" placeholder="Enter list item">
+			</div>
+			<div class="column">
+				<span id="currency">$</span><input class="item-price" type="number" min="0.00" max="1000.00" align="top" placeholder="0.00">
+			</div>
+			<div class="column">
+				<input class="quantity" type="number" min="0" max="100" placeholder="0" align="top" name="">
+			</div>
+			<div class="column">
+				<input type="checkbox" class="hold-item" name=""> Hold For Next Time
+			</div>
+		</div>
+	</div>
+	<div class="panel ">
+		<div class="row viewed">
+			<div class="column pad"> . </div>
+			<div class="column" id="item"> 30 Minute Consultation</div>
+			<div class="column"> $25.00</div>
+			<div class="column">1</div>
+			<div class="column"> $25.00 </div>
+		</div>
+		<div class="row totals">
+			<div class="column pad"> . </div>
+			<div class="column pad" id="item"> . </div>
+			<div class="column pad">.</div>
+			<div class="column total">Subtotal:</div>
+			<div class="column">$25.00</div>
+		</div>
+		<div class="row totals">
+			<div class="column pad"> . </div>
+			<div class="column pad" id="item">.</div>
+			<div class="column pad">.</div>
+			<div class="column total">
+				<span>Tax</span>
+				[<span class="state-tax">CO @ 7.99%</span>]
+			</div>
+			<div class="column">$1.99</div>
+		</div>
+		<div class="row totals">
+			<div class="column pad">.</div>
+			<div class="column pad" id="item">.</div>
+			<div class="column pad">.</div>
+			<div class="column total">
+				<span>Purchase Price</span>
+			</div>
+			<div class="column">
+				<span class="total-purchase">$26.99</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+*
+ * Font Sizing Emmet 1rem = 10px
+ */
+html {font-size: 62.5%;} / sets global font size to 10px on desktop browsers /
+h1 {font-size:3.2rem}
+h2 {font-size:2.4rem}
+h3 {font-size:1.87167rem}
+h4 {font-size:1.6rem}
+h5 {font-size:1.32833rem}
+h6 {font-size:1.07167rem}
+input, select, th, td {font-size:1rem}
+
+/**
+ * Start of Custom Styles
+ */
+body {
+	background-color: #100F29;
+}
+
+ .panel {
+ 	width: 100%;
+ 	font-family: 'Quattrocento', serif;
+ 	color: #C3DED2;
+ 	background-color: #100F29;
+ }
+.cart-header {
+	display: block;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #C3DED2;
+
+}
+
+.cart-symbol {
+	visibility: hidden;
+}
+
+.label {
+	font-family: 'Fanwood Text', serif;
+}
+
+ .row {
+ 	display: table;
+ 	position: relative;
+ 	width: 100%;
+ 	padding-top: .25rem;
+ 	padding-bottom: .25rem;
+ 	max-width: 75rem;
+ }
+
+ .column {
+ 	position: relative;
+ 	float: left;
+ 	width: 15%;
+ 	text-align: center;
+ }
+
+ .column > .label {
+ 	border: 2px solid #5B3569
+ }
+
+ .row > #item {
+ 	width: 35%;
+ }
+
+ .pad {
+ 	visibility: hidden;
+ }
+
+ .button {
+ 	display: inline-block;
+ 	position: relative;
+ 	border-style: solid;
+ 	border-width: 1px;
+ 	border-radius: 5px;
+ 	cursor: pointer;
+ 	margin: .5rem 0 0 0.25rem;
+ 	line-height: 1;
+ 	padding: 0.33rem 0.33rem;
+
+
+ 	font-family: 'Quattrocento', serif;
+ 	font-weight: bold;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	background-color: #5B3569;
+ 	border-color: #5B3569;
+ 	color: #C3DED2;
+ }
+
+ .cart-seperate {
+ 	border-bottom: 1px solid #C3DED2;
+ }
+
+ .enter-item, .item-price, #currency {
+ 	padding: 0.33rem 0.4rem;
+ 	margin: .5rem 1rem 0 0.25rem;
+ 	float: left;
+ 	color: #5B3569
+ }
+
+ .quantity, .hold-item {
+ 	padding: 0.33rem 0.4rem;
+ 	margin-top: .5rem;
+ }
+
+ .hold-item {
+ 	margin-top: 1rem;
+ }
+
+ .total {
+ 	text-align: right;
+ 	font-weight: bold;
+ }
+
+.viewed {
+	border-bottom: 1px solid #C3DED2;
+}
