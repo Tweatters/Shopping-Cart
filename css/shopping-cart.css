@@ -88,6 +88,10 @@ body {
  	color: #C3DED2;
  }
 
+ .button:hover {
+ 	background-color: #3E2447;
+ }
+
  .cart-seperate {
  	border-bottom: 1px solid #C3DED2;
  }
