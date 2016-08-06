@@ -17,18 +17,18 @@ body {
 	background-color: #100F29;
 }
 
- .panel {
+ .page-section {
  	width: 100%;
  	font-family: 'Quattrocento', serif;
  	color: #C3DED2;
- 	background-color: #100F29;
+ 
  }
+
 .cart-header {
 	display: block;
 	position: relative;
 	width: 100%;
 	border-bottom: 1px solid #C3DED2;
-
 }
 
 .cart-symbol {
@@ -39,7 +39,7 @@ body {
 	font-family: 'Fanwood Text', serif;
 }
 
- .row {
+.row {
  	display: table;
  	position: relative;
  	width: 100%;
@@ -48,11 +48,12 @@ body {
  	max-width: 75rem;
  }
 
- .column {
+.column {
  	position: relative;
  	float: left;
  	width: 15%;
  	text-align: center;
+ 	display: inline;
  }
 
  .column > .label {
@@ -67,7 +68,7 @@ body {
  	visibility: hidden;
  }
 
- .button {
+ .button, .ibutton{
  	display: inline-block;
  	position: relative;
  	border-style: solid;
@@ -88,35 +89,82 @@ body {
  	color: #C3DED2;
  }
 
- .button:hover {
+.button:hover {
  	background-color: #3E2447;
  }
+
+ a > .button{
+ 	font-size: 1rem;
+ }
+
+.ibutton {
+ 	border-style: none;
+ 	
+ }
+
+.delete {
+ 	background: url('images/trash16.png');
+ 	background-repeat: no-repeat;
+ }
+
+.edit {
+	background: url('images/edit16.png');
+	background-repeat: no-repeat;
+} 
+
+.hold {
+	background: url('images/hold16.png');
+	background-repeat: no-repeat;
+}
+
+.cart-seperate, .cart-list, .cart-total, .cart-template {
+	display: table;
+	position: relative;
+}
+
+.cart-template {
+	/*visible only in debug. when live hide this*/
+	/*visibility: hidden;*/
+	display: none;
+	background-color: yellow; /*for debug*/
+}
 
  .cart-seperate {
  	border-bottom: 1px solid #C3DED2;
  }
 
- .enter-item, .item-price, #currency {
+.cart-total {
+	border-top: 1px solid #C3DED2;
+}
+
+#enter-item, #item-price, #currency {
  	padding: 0.33rem 0.4rem;
  	margin: .5rem 1rem 0 0.25rem;
  	float: left;
  	color: #5B3569
  }
 
- .quantity, .hold-item {
+#quantity, #hold-item {
  	padding: 0.33rem 0.4rem;
  	margin-top: .5rem;
  }
 
- .hold-item {
+#hold-item {
  	margin-top: 1rem;
  }
 
- .total {
- 	text-align: right;
+.output-margin {
+	margin-top: .5rem;
+}
+.total {
+ 	text-align: center;
  	font-weight: bold;
  }
 
 .viewed {
 	border-bottom: 1px solid #C3DED2;
+}
+
+.pad > a {
+	visibility: visible;
 }

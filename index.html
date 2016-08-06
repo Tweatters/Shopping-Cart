@@ -9,8 +9,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="panel cart-header">
-		<div class="cart-header-title">
+	<div class="page-section cart-header">
+		<div class="cart-header-title" title="Click Shopping Cart To Initialize Sample Data">
 			<div class="column cart-symbol">.</div>
 			<h1>Shopping Cart</h1>
 		</div>
@@ -32,34 +32,54 @@
 			</div>
 		</div>
 	</div>
-	<div class="panel cart-seperate">
+
+<!-- Template of rows for editing and viewing -->
+
+
+
+
+
+
+<!-- this is edit controls -->
+	<div class="page-section cart-seperate">
 		<div class="row">
 			<div class="column">
-				<a href="#" class="button">Add</a>
-				<a href="#" class="button">Cancel</a>
+				<a href="#" class="button update">Add</a>
+				<a href="#" class="button cancel">Cancel</a>
 			</div>
 			<div class="column" id="item">
-				<input class="enter-item" size="55" placeholder="Enter list item">
+				<input id="enter-item" size="55" placeholder="Enter list item">
 			</div>
 			<div class="column">
-				<span id="currency">$</span><input class="item-price" type="number" min="0.00" max="1000.00" align="top" placeholder="0.00">
+				<span id="currency">$</span><input id="item-price" type="number" min="0.00" max="1000.00" align="top" placeholder="0.00">
 			</div>
 			<div class="column">
-				<input class="quantity" type="number" min="0" max="100" placeholder="0" align="top" name="">
+				<input id="quantity" type="number" min="0" max="100" placeholder="0" align="top" name="">
 			</div>
 			<div class="column">
-				<input type="checkbox" class="hold-item" name=""> Hold For Next Time
+				<input type="checkbox" id="hold-item" name=""> Hold For Next Time
 			</div>
 		</div>
 	</div>
-	<div class="panel ">
+
+<!-- list of cart items, based on templates for page -->
+<div class="page-section cart-list"></div>
+	
+<!-- cart totals here -->
+	<div class="page-section cart-total">
 		<div class="row viewed">
-			<div class="column pad"> . </div>
-			<div class="column" id="item"> 30 Minute Consultation</div>
-			<div class="column"> $25.00</div>
-			<div class="column">1</div>
-			<div class="column"> $25.00 </div>
+			<div class="column pad">
+				<a href="#" class="button delete" title="Delete Item">Delete</a>
+				<a href="#" class="button edit" title="Edit Item">Edit</a>
+				<a href="#" class="button hold" title="Put Item On Layaway">Hold</a>
+			</div>
+			<div class="column output-margin" id="item"> 30 Minute Consultation</div>
+			<div class="column output-margin"> $25.00</div>
+			<div class="column output-margin">1</div>
+			<div class="column output-margin"> $25.00 </div>
 		</div>
+
+		<!-- totals seciton -->
 		<div class="row totals">
 			<div class="column pad"> . </div>
 			<div class="column pad" id="item"> . </div>
@@ -98,5 +118,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/shopping-cart.js"></script>
 </body>
 </html>
